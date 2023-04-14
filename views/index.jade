@@ -1,6 +1,346 @@
-extends layout
+doctype html
+html(lang='es')
+  head
+    meta(charset='UTF-8')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css', integrity='sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==', crossorigin='anonymous', referrerpolicy='no-referrer')
+    |     
+    title SantoDelgado
+    |     
+    link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+  body
+    // MENU ENCABEZADO
+    .contenedor-header
+      header
+        .logo
+          a(href='#') Santo
+        |             
+        nav#nav
+          ul
+            li
+              a(href='#inicio', onclick='seleccionar()') INICIO
+            |                     
+            li
+              a(href='#sobremi', onclick='seleccionar()') SOBRE MI
+            |                     
+            li
+              a(href='#skills', onclick='seleccionar()') HABILIDADES
+            |                     
+            li
+              a(href='#curriculum', onclick='seleccionar()') CURRICULUM
+            |                     
+            li
+              a(href='#contacto', onclick='seleccionar()') CONTACTO
+        |             
+        .nav-responsive(onclick='mostrarOcultarMenu()')
+          i.fa-solid.fa-bars
+    // SECCION INICIO
+    section#inicio.inicio
+      .contenido-banner
+        .contenedor-img
+          img(src='images/hero.jpg', alt='')
+        |             
+        h1 Santo Delgado
+        |             
+        h2 Estudiante de Ingenieria en Informatica en la UNERG
+        |             
+        .redes
+          a(href='https://www.facebook.com/eserxzd')
+            i.fa-brands.fa-facebook-f
+          |                 
+          a(href='https://www.instagram.com/delgado_santo/')
+            i.fa-brands.fa-instagram
+          |                 
+          a(href='https://www.linkedin.com/in/santo-de-jesus-delgado-sumoza-285678228')
+            i.fa-brands.fa-linkedin-in
+          |                 
+          a(href='https://github.com/SantoDelgado')
+            i.fa-brands.fa-github
+    // SECCION SOBRE MI
+    section#sobremi.sobremi
+      .contenido-seccion
+        h2 Sobre M&iacute;
+        |             
+        p
+          span Hola, soy Santo Delgado.
+          |  Actualmente, me encuentro cursando estudios en inform&aacute;tica con el objetivo de adquirir conocimientos y habilidades en &aacute;reas como la programaci&oacute;n, el desarrollo web y la seguridad inform&aacute;tica. Estoy comprometido con mi formaci&oacute;n en esta disciplina y busco desarrollar una carrera profesional en el campo de la tecnolog&iacute;a de la informaci&oacute;n.
+        |             
+        .fila
+          // datos personales
+          .col
+            h3 Datos Personales
+            |                     
+            ul
+              li
+                strong Cumplea&ntilde;os
+                |06-03-1996
+              |                         
+              li
+                strong Tel&eacute;fono
+                |+584243031238
+              |                         
+              li
+                strong Email
+                |serxzd@gmail.com
+              |                         
+              li
+                strong Direcci&oacute;n
+                |Guarico, Venezuela
+              |                         
+              li
+                strong Cargo
+                |                             
+                span FREELANCE
+          // intereses
+          .col
+            h3 Intereses
+            |                     
+            .contenedor-intereses
+              .interes
+                i.fa-solid.fa-gamepad
+                |                             
+                span JUEGOS
+              |                         
+              .interes
+                i.fa-solid.fa-headphones
+                |                             
+                span MUSICA
+              |                         
+              .interes
+                i.fa-solid.fa-plane
+                |                             
+                span VIAJAR
+              |                         
+              .interes
+                i.fa.fa-film
+                |                             
+                span PELICULAS
+              |                         
+              .interes
+                i.fa-solid.fa-person-hiking
+                |                             
+                span DEPORTE
+              |                         
+              .interes
+                i.fa-solid.fa-book
+                |                             
+                span LIBROS
+              |                         
+              .interes
+                i.fa-solid.fa-car
+                |                             
+                span AUTOS
+              |                         
+              .interes
+                i.fa-solid.fa-camera
+                |                             
+                span FOTOS
+          |                 
+          span.overlay
+    // SECCION SKILLS
+    section#skills.skills
+      .contenido-seccion
+        h2 Habilidades
+        |             
+        .fila
+          // Technical Skill
+          .col
+            h3 Habilidades Técnicas
+            |                     
+            .skill
+              span HTML
+              |                         
+              .barra-skill
+                .progreso
+                  span 75%
+            |                     
+            .skill
+              span CSS
+              |                         
+              .barra-skill
+                .progreso
+                  span 89%
+            |                     
+            .skill
+              span JavaScritp
+              |                         
+              .barra-skill
+                .progreso
+                  span 90%
+            |                     
+            .skill
+              span Python
+              |                         
+              .barra-skill
+                .progreso
+                  span 81%         
+          // Professional Skills
+          .col
+            h3  Habilidades Profesionales
+            |                     
+            .skill
+              span Comunicaci&oacute;n
+              |                         
+              .barra-skill
+                .progreso
+                  span 80%
+            |                     
+            .skill
+              span Trabajo en Equipo
+              |                         
+              .barra-skill
+                .progreso
+                  span 70%
+            |                     
+            .skill 
+              span Creatividad
+              |                         
+              .barra-skill 
+                .progreso
+                  span 99%
+            |                     
+            .skill
+              span Dedicaci&oacute;n
+              |                         
+              .barra-skill
+                .progreso
+                  span 65%
+    // SECCION CURRICULUM
+    section#curriculum.curriculum
+      .contenido-seccion
+        h2 Curriculum
+        |             
+        .fila
+          .col.izquierda
+            h3 Educaci&oacute;n
+            |                     
+            .item.izq
+              h4 Primaria
+              |                         
+              span.casa Escuela Dr. Vicente Peña
+              |                         
+              span.fecha 2002 - 2008
+              |                         
+              p
+                | Obtuve mi formación educativa primaria, en la  Escuela Dr. Vicente Peña, donde adquirí habilidades y conocimientos fundamentales para mi desarrollo profesional y personal.
+              |                         
+              .conectori
+                .circuloi
+            |                     
+            .item.izq
+              h4 Secundaria
+              |                         
+              span.casa "UETD" Guarico
+              |                         
+              span.fecha 2008 - 2013
+              |                         
+              p
+                | Terminé mis estudios de secundaria, en la escuela Educativa de Talento Deportivo del Estado Guarico, una escuela que me brindó los conocimientos y habilidades necesarios para mi carrera profesional.
+              |                         
+              .conectori
+                .circuloi
+            |                     
+            .item.izq
+              h4 Universidad
+              |                         
+              span.casa Romulo Gallegos
+              |                         
+              span.fecha 2022 - Presente
+              |                         
+              p
+                | Me encuentro actualmente cursando una carrera universitaria en Informática de manera profesional y dedicada. Estoy tomando numerosas asignaturas centradas en diversas áreas de la Informática, como programación, bases de datos, redes y seguridad. Mi objetivo es convertirme en un profesional de la tecnología capacitado y competitivo.
+              |                         
+              .conectori
+                .circuloi
+          |                 
+          .col.derecha
+            h3 Experiencia de trabajo
+            |                     
+            .item.der
+              h4 FANB
+              |                         
+              span.casa GNB
+              |                         
+              span.fecha 2014 - 2018
+              |                         
+              p
+                | En este rol, adquirí habilidades en liderazgo, disciplina, seguridad, protección y cumplimiento de la ley y el orden. Desarrollé habilidades valiosas como trabajo en equipo, resolución de problemas y toma de decisiones efectivas en situaciones de alta presión. Además, aprendí a trabajar bajo estrictos protocolos y procedimientos, lo que me proporcionó una base sólida para desarrollar mi carrera profesional.
+              |                         
+              .conectord
+                .circulod
+            |                     
+            .item.der
+              h4 CONAS
+              |                         
+              span.casa GNB
+              |                         
+              span.fecha 2018 - 2021
+              |                         
+              p
+                | Durante mi trayectoria profesional, tuve la oportunidad de desempeñarme laboralmente en el CONAS, donde adquirí conocimientos y habilidades valiosas en el ámbito de la inteligencia militar y otras areas.
+              |                         
+              .conectord
+                .circulod                                
+    // SECCION CONTACTO
+    section#contacto.contacto
+      .contenido-seccion
+        h2 CONTACTO
+        |             
+        .fila
+          // Formulario
+          .col
+            input(type='text', placeholder='Tú Nombre')
+            |                     
+            input(type='text', placeholder='Número telefónico')
+            |                     
+            input(type='text', placeholder='Dirección de correo')
+            |                     
+            input(type='text', placeholder='Tema')
+            |                     
+            textarea(name='', id='', cols='30', rows='10', placeholder='Mensaje')
+            |                     
+            button
+              | Enviar Mensaje
+              i.fa-solid.fa-paper-plane
+              |                         
+              span.overlay
+          // Mapa
+          .col
+            img(src='images/ubicacion.jpg', alt='')
+            |                     
+            .info
+              ul
+                li
+                  i.fa-solid.fa-location-dot
+                  |2301 San Juan de los Morros, Guarico, Venezuela 
+                |                             
+                li
+                  i.fa-solid.fa-mobile-screen
+                  |Llamanos: 0424 - 3031238
+                |                             
+                li
+                  i.fa-solid.fa-envelope
+                  |Email: eserxzd@gmail.com
+    // footer
+    footer
+      a.arriba(href='#inicio')
+        i.fa-solid.fa-angles-up
+      |         
+      .redes
+          a(href='https://www.facebook.com/eserxzd')
+            i.fa-brands.fa-facebook-f
+          |                 
+          a(href='https://www.instagram.com/delgado_santo/')
+            i.fa-brands.fa-instagram
+          |                 
+          a(href='https://www.linkedin.com/in/santo-de-jesus-delgado-sumoza-285678228')
+            i.fa-brands.fa-linkedin-in
+          |                 
+          a(href='https://github.com/SantoDelgado')
+            i.fa-brands.fa-github
 
-block content
-  h1 Santo Delgado
-  h1 C.I.V-24238114
-  h1  Seccion: 3
+    script(src='/javascripts/script.js')
