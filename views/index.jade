@@ -9,7 +9,7 @@ html(lang='es')
     |     
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css', integrity='sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==', crossorigin='anonymous', referrerpolicy='no-referrer')
     |     
-    title SantoDelgado
+    title Santo Delgado
     |     
     link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
   body
@@ -293,22 +293,18 @@ html(lang='es')
         .fila
           // Formulario
           .col
-            input(type='text', placeholder='Tú Nombre')
-            |                     
-            input(type='text', placeholder='Número telefónico')
-            |                     
-            input(type='text', placeholder='Dirección de correo')
-            |                     
-            input(type='text', placeholder='Tema')
-            |                     
-            textarea(name='', id='', cols='30', rows='10', placeholder='Mensaje')
-            |                     
-            button
-              | Enviar Mensaje
-              i.fa-solid.fa-paper-plane
-              |                         
-              span.overlay
-          // Mapa
+            form(action='/', method='post')
+              div
+                label(for='email') 
+                input#email(type='email', name='email', placeholder='Dirección de correo')
+              div
+                label(for='name')
+                input#name(type='text', name='name', placeholder='Tú Nombre')
+              div
+                label(for='comment')
+                textarea#comment(name='comment', cols='30', rows='10', placeholder='Comentario')
+              button(type='submit') Enviar
+           // Mapa
           .col
             img(src='images/ubicacion.jpg', alt='')
             |                     
@@ -344,3 +340,4 @@ html(lang='es')
             i.fa-brands.fa-github
 
     script(src='/javascripts/script.js')
+   
