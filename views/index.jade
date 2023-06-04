@@ -12,6 +12,8 @@ html(lang='es')
     title Santo Delgado
     |     
     link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+    |
+    script(src='https://www.google.com/recaptcha/api.js')
   body
     // MENU ENCABEZADO
     .contenedor-header
@@ -303,6 +305,7 @@ html(lang='es')
               div
                 label(for='comment')
                 textarea#comment(name='comment', cols='30', rows='10', placeholder='Comentario')
+              div.g-recaptcha(data-sitekey="6Lf6RkomAAAAAJQTz7cReF5u_ncqmeckT-trRrry")
               button(type='submit') Enviar
            // Mapa
           .col
@@ -335,9 +338,9 @@ html(lang='es')
           |                 
           a(href='https://www.linkedin.com/in/santo-de-jesus-delgado-sumoza-285678228', target='_blank')
             i.fa-brands.fa-linkedin-in
-          |                 
+          |
           a(href='https://github.com/SantoDelgado', target='_blank')
             i.fa-brands.fa-github
-
     script(src='/javascripts/script.js')
+    
    
