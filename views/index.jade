@@ -14,7 +14,14 @@ html(lang='es')
     link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
     |
     script(src='https://www.google.com/recaptcha/api.js')
-  body
+    |
+    script(async src="https://www.googletagmanager.com/gtag/js?id=G-BMQ05KY1T1")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-BMQ05KY1T1');
+      body
     // MENU ENCABEZADO
     .contenedor-header
       header
