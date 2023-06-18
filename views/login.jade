@@ -1,0 +1,44 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Entrar o Registrarse 
+    link(href='https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='stylesheets/style-login.css')
+    style.
+      .srouce{
+      text-align: center;
+      color: #ffffff;
+      padding: 10px;
+      }
+  body
+  .main-container
+      .form-container
+          .social-login
+            ul
+              li
+                a(href='/index', onclick='seleccionar()', target='_blank') INICIO
+    .main-container
+      .form-container
+        .form-body
+          h2.title Accede con
+          .social-login
+            ul
+              li.google
+                a(href="/auth/google") Google
+          // SOCIAL LOGIN
+          form.the-form(action='')
+            label(for='email') Email
+            input#email(type='email', name='email', placeholder='Enter your email')
+            label(for='password') Password
+            input#password(type='password', name='password', placeholder='Enter your password')
+            input(type='submit', value='Log In')
+        // FORM BODY
+        .form-footer
+          div
+            span ¿No tienes una cuenta? 
+            |  
+            a(href='') Regístrate
+        // FORM FOOTER
+      // FORM CONTAINER

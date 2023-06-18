@@ -1,6 +1,14 @@
 doctype html
 html(lang='es')
   head
+    meta(property='og:title', content='Santo Delgado - Desarrollador web con experiencia en React y Angular y back-end con Node.js')
+    | 
+    meta(property='og:type', content='Santo Delgado - Desarrollador web')
+    | 
+    meta(property='og:url', content='https://santodelgado.onrender.com/')
+    | 
+    meta(property='og:description', content='Santo Delgado - Soy un desarrollador web con más de 2 años de experiencia en el desarrollo de aplicaciones web, Mis habilidades incluyen el desarrollo de front-end con React y Angular, back-end con Node.js')
+    | 
     meta(charset='UTF-8')
     |     
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -43,7 +51,10 @@ html(lang='es')
               a(href='#curriculum', onclick='seleccionar()') CURRICULUM
             |                     
             li
-              a(href='#contacto', onclick='seleccionar()') CONTACTO
+              a(href='#contacto', onclick='seleccionar()') CONTACTAME
+            |                     
+            li
+              a(href='/login', onclick='seleccionar()') LOGIN IN                
         |             
         .nav-responsive(onclick='mostrarOcultarMenu()')
           i.fa-solid.fa-bars
